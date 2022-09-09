@@ -18,7 +18,8 @@ final class ToDoListViewController: UIViewController {
             guard let strongSelf = self, let folderTitle = folder.title else {
                 return
             }
-            print(folderTitle)
+            strongSelf.navigationController?.pushViewController(DetailViewController(folder: folderTitle), animated: true)
+            
         }
         return tableView
 

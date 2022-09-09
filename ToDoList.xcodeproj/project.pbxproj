@@ -20,6 +20,9 @@
 		C32943E628CBC7A500ABDBDA /* CustomTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32943E528CBC7A500ABDBDA /* CustomTableView.swift */; };
 		C32943E828CBDC7800ABDBDA /* ToDoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32943E728CBDC7800ABDBDA /* ToDoTableViewCell.swift */; };
 		C32943EB28CBE4B300ABDBDA /* AddItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32943EA28CBE4B300ABDBDA /* AddItemViewController.swift */; };
+		C32943EE28CBF06C00ABDBDA /* DetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32943ED28CBF06C00ABDBDA /* DetailTableViewCell.swift */; };
+		C32943F028CBF1CB00ABDBDA /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32943EF28CBF1CB00ABDBDA /* DetailViewController.swift */; };
+		C32943F228CBF75B00ABDBDA /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32943F128CBF75B00ABDBDA /* CustomButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +41,9 @@
 		C32943E528CBC7A500ABDBDA /* CustomTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableView.swift; sourceTree = "<group>"; };
 		C32943E728CBDC7800ABDBDA /* ToDoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoTableViewCell.swift; sourceTree = "<group>"; };
 		C32943EA28CBE4B300ABDBDA /* AddItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemViewController.swift; sourceTree = "<group>"; };
+		C32943ED28CBF06C00ABDBDA /* DetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewCell.swift; sourceTree = "<group>"; };
+		C32943EF28CBF1CB00ABDBDA /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		C32943F128CBF75B00ABDBDA /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +76,7 @@
 		C32943BD28CB98C000ABDBDA /* ToDoList */ = {
 			isa = PBXGroup;
 			children = (
+				C32943EC28CBF04000ABDBDA /* DetailItem */,
 				C32943E928CBE49A00ABDBDA /* AddItem */,
 				C32943D728CB999100ABDBDA /* ViewModel */,
 				C32943D628CB998F00ABDBDA /* ToDoList */,
@@ -97,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				C32943D928CB99BF00ABDBDA /* ToDoListViewController.swift */,
+				C32943F128CBF75B00ABDBDA /* CustomButton.swift */,
 				C32943E728CBDC7800ABDBDA /* ToDoTableViewCell.swift */,
 			);
 			path = ToDoList;
@@ -118,6 +126,15 @@
 				C32943EA28CBE4B300ABDBDA /* AddItemViewController.swift */,
 			);
 			path = AddItem;
+			sourceTree = "<group>";
+		};
+		C32943EC28CBF04000ABDBDA /* DetailItem */ = {
+			isa = PBXGroup;
+			children = (
+				C32943ED28CBF06C00ABDBDA /* DetailTableViewCell.swift */,
+				C32943EF28CBF1CB00ABDBDA /* DetailViewController.swift */,
+			);
+			path = DetailItem;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -190,12 +207,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C32943F028CBF1CB00ABDBDA /* DetailViewController.swift in Sources */,
 				C32943BF28CB98C100ABDBDA /* AppDelegate.swift in Sources */,
 				C32943C128CB98C100ABDBDA /* SceneDelegate.swift in Sources */,
 				C32943E028CBB81E00ABDBDA /* CoreDataManager+Extensions.swift in Sources */,
+				C32943F228CBF75B00ABDBDA /* CustomButton.swift in Sources */,
 				C32943E228CBB89200ABDBDA /* DataProvider.swift in Sources */,
 				C32943E628CBC7A500ABDBDA /* CustomTableView.swift in Sources */,
 				C32943DA28CB99BF00ABDBDA /* ToDoListViewController.swift in Sources */,
+				C32943EE28CBF06C00ABDBDA /* DetailTableViewCell.swift in Sources */,
 				C32943DC28CBAF5900ABDBDA /* CoreDataManager.swift in Sources */,
 				C32943E428CBC1C800ABDBDA /* DataSource.swift in Sources */,
 				C32943C928CB98C100ABDBDA /* ToDoList.xcdatamodeld in Sources */,

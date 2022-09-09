@@ -28,17 +28,16 @@ final class CoreDataManager {
     
     private init() {
         managedObjectContext = self.persistentContainer.viewContext
-        
-        
-        
+       
     }
-    private func saveContest() {
+    internal func saveContext() {
         if managedObjectContext.hasChanges {
             
             do {
                 try managedObjectContext.save()
-            } catch let err as NSError {
-                fatalError("\(err)")
+            } catch let err  {
+                let error = err as NSError
+                fatalError("\(error), \(error.userInfo)")
                 
             }
         }
@@ -46,3 +45,5 @@ final class CoreDataManager {
         
     }
 }
+
+

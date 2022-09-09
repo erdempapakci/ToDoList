@@ -18,6 +18,8 @@
 		C32943E228CBB89200ABDBDA /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32943E128CBB89200ABDBDA /* DataProvider.swift */; };
 		C32943E428CBC1C800ABDBDA /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32943E328CBC1C800ABDBDA /* DataSource.swift */; };
 		C32943E628CBC7A500ABDBDA /* CustomTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32943E528CBC7A500ABDBDA /* CustomTableView.swift */; };
+		C32943E828CBDC7800ABDBDA /* ToDoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32943E728CBDC7800ABDBDA /* ToDoTableViewCell.swift */; };
+		C32943EB28CBE4B300ABDBDA /* AddItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32943EA28CBE4B300ABDBDA /* AddItemViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		C32943E128CBB89200ABDBDA /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
 		C32943E328CBC1C800ABDBDA /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
 		C32943E528CBC7A500ABDBDA /* CustomTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableView.swift; sourceTree = "<group>"; };
+		C32943E728CBDC7800ABDBDA /* ToDoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoTableViewCell.swift; sourceTree = "<group>"; };
+		C32943EA28CBE4B300ABDBDA /* AddItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,7 @@
 		C32943BD28CB98C000ABDBDA /* ToDoList */ = {
 			isa = PBXGroup;
 			children = (
+				C32943E928CBE49A00ABDBDA /* AddItem */,
 				C32943D728CB999100ABDBDA /* ViewModel */,
 				C32943D628CB998F00ABDBDA /* ToDoList */,
 				C32943D528CB998D00ABDBDA /* DB */,
@@ -92,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				C32943D928CB99BF00ABDBDA /* ToDoListViewController.swift */,
+				C32943E728CBDC7800ABDBDA /* ToDoTableViewCell.swift */,
 			);
 			path = ToDoList;
 			sourceTree = "<group>";
@@ -104,6 +110,14 @@
 				C32943E528CBC7A500ABDBDA /* CustomTableView.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C32943E928CBE49A00ABDBDA /* AddItem */ = {
+			isa = PBXGroup;
+			children = (
+				C32943EA28CBE4B300ABDBDA /* AddItemViewController.swift */,
+			);
+			path = AddItem;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,6 +199,8 @@
 				C32943DC28CBAF5900ABDBDA /* CoreDataManager.swift in Sources */,
 				C32943E428CBC1C800ABDBDA /* DataSource.swift in Sources */,
 				C32943C928CB98C100ABDBDA /* ToDoList.xcdatamodeld in Sources */,
+				C32943E828CBDC7800ABDBDA /* ToDoTableViewCell.swift in Sources */,
+				C32943EB28CBE4B300ABDBDA /* AddItemViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

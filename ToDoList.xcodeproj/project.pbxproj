@@ -9,23 +9,23 @@
 /* Begin PBXBuildFile section */
 		C32943BF28CB98C100ABDBDA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32943BE28CB98C100ABDBDA /* AppDelegate.swift */; };
 		C32943C128CB98C100ABDBDA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32943C028CB98C100ABDBDA /* SceneDelegate.swift */; };
-		C32943C328CB98C100ABDBDA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32943C228CB98C100ABDBDA /* ViewController.swift */; };
 		C32943C928CB98C100ABDBDA /* ToDoList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C32943C728CB98C100ABDBDA /* ToDoList.xcdatamodeld */; };
 		C32943CB28CB98C100ABDBDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C32943CA28CB98C100ABDBDA /* Assets.xcassets */; };
 		C32943CE28CB98C100ABDBDA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C32943CC28CB98C100ABDBDA /* LaunchScreen.storyboard */; };
 		C32943DA28CB99BF00ABDBDA /* ToDoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32943D928CB99BF00ABDBDA /* ToDoListViewController.swift */; };
+		C32943DC28CBAF5900ABDBDA /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32943DB28CBAF5900ABDBDA /* CoreDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C32943BB28CB98C000ABDBDA /* ToDoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C32943BE28CB98C100ABDBDA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C32943C028CB98C100ABDBDA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C32943C228CB98C100ABDBDA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C32943C828CB98C100ABDBDA /* ToDoList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ToDoList.xcdatamodel; sourceTree = "<group>"; };
 		C32943CA28CB98C100ABDBDA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C32943CD28CB98C100ABDBDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C32943CF28CB98C100ABDBDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C32943D928CB99BF00ABDBDA /* ToDoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListViewController.swift; sourceTree = "<group>"; };
+		C32943DB28CBAF5900ABDBDA /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,11 +63,9 @@
 				C32943D528CB998D00ABDBDA /* DB */,
 				C32943BE28CB98C100ABDBDA /* AppDelegate.swift */,
 				C32943C028CB98C100ABDBDA /* SceneDelegate.swift */,
-				C32943C228CB98C100ABDBDA /* ViewController.swift */,
 				C32943CA28CB98C100ABDBDA /* Assets.xcassets */,
 				C32943CC28CB98C100ABDBDA /* LaunchScreen.storyboard */,
 				C32943CF28CB98C100ABDBDA /* Info.plist */,
-				C32943C728CB98C100ABDBDA /* ToDoList.xcdatamodeld */,
 			);
 			path = ToDoList;
 			sourceTree = "<group>";
@@ -75,6 +73,8 @@
 		C32943D528CB998D00ABDBDA /* DB */ = {
 			isa = PBXGroup;
 			children = (
+				C32943C728CB98C100ABDBDA /* ToDoList.xcdatamodeld */,
+				C32943DB28CBAF5900ABDBDA /* CoreDataManager.swift */,
 			);
 			path = DB;
 			sourceTree = "<group>";
@@ -164,10 +164,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C32943C328CB98C100ABDBDA /* ViewController.swift in Sources */,
 				C32943BF28CB98C100ABDBDA /* AppDelegate.swift in Sources */,
 				C32943C128CB98C100ABDBDA /* SceneDelegate.swift in Sources */,
 				C32943DA28CB99BF00ABDBDA /* ToDoListViewController.swift in Sources */,
+				C32943DC28CBAF5900ABDBDA /* CoreDataManager.swift in Sources */,
 				C32943C928CB98C100ABDBDA /* ToDoList.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

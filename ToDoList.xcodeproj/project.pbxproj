@@ -16,6 +16,7 @@
 		C32943DC28CBAF5900ABDBDA /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32943DB28CBAF5900ABDBDA /* CoreDataManager.swift */; };
 		C32943E028CBB81E00ABDBDA /* CoreDataManager+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32943DF28CBB81E00ABDBDA /* CoreDataManager+Extensions.swift */; };
 		C32943E228CBB89200ABDBDA /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32943E128CBB89200ABDBDA /* DataProvider.swift */; };
+		C32943E428CBC1C800ABDBDA /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32943E328CBC1C800ABDBDA /* DataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		C32943DB28CBAF5900ABDBDA /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		C32943DF28CBB81E00ABDBDA /* CoreDataManager+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreDataManager+Extensions.swift"; sourceTree = "<group>"; };
 		C32943E128CBB89200ABDBDA /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
+		C32943E328CBC1C800ABDBDA /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				C32943E128CBB89200ABDBDA /* DataProvider.swift */,
+				C32943E328CBC1C800ABDBDA /* DataSource.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -176,6 +179,7 @@
 				C32943E228CBB89200ABDBDA /* DataProvider.swift in Sources */,
 				C32943DA28CB99BF00ABDBDA /* ToDoListViewController.swift in Sources */,
 				C32943DC28CBAF5900ABDBDA /* CoreDataManager.swift in Sources */,
+				C32943E428CBC1C800ABDBDA /* DataSource.swift in Sources */,
 				C32943C928CB98C100ABDBDA /* ToDoList.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,5 +1,5 @@
-# ToDoList
-
+<h1 align="center">ToDoList</h1>
+<p align="center">
 
 ## Introduction
 

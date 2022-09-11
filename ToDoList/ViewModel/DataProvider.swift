@@ -9,10 +9,10 @@ import Foundation
 import CoreData
 
 protocol DataProviderDelegate: AnyObject {
-
+    
     func didInsertItem(indexPath: IndexPath)
     func didDeleteItem(indexPath: IndexPath)
-   
+    
 }
 
 final class DataProvider<Model: NSManagedObject>: NSObject, NSFetchedResultsControllerDelegate {
@@ -66,10 +66,10 @@ final class DataProvider<Model: NSManagedObject>: NSObject, NSFetchedResultsCont
         
         
     }
-       func rowsInSection(section: Int) -> Int {
-            
-            return fetchedResultController.sections?[section].numberOfObjects ?? 0
-        }
+    func rowsInSection(section: Int) -> Int {
+        
+        return fetchedResultController.sections?[section].numberOfObjects ?? 0
+    }
     func numberOfSections() -> Int {
         return fetchedResultController.sections?.count ?? 1
         
@@ -92,6 +92,7 @@ final class DataProvider<Model: NSManagedObject>: NSObject, NSFetchedResultsCont
             } else if type == .delete {
                 if let idPath = newIndexPath {
                     delegate?.didDeleteItem(indexPath: idPath)
+                    
                 }
                 
             }

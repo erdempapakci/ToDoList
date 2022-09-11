@@ -22,7 +22,6 @@ final class DetailTableViewCell: UITableViewCell {
         label.numberOfLines = 0
         return label
         
-        
     }()
     
     

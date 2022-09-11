@@ -18,7 +18,7 @@ final class CustomTableView<Cell: UITableViewCell, Model: NSManagedObject>: UITa
     
     private lazy var modelDataSource: DataSource<Cell, Model> = {
         return DataSource<Cell, Model>(cellID: cellID, dataProvider: dataProvider, configCell: configCell)
-       
+        
     }()
     init(dataProvider:DataProvider<Model>, configCell: @escaping (Cell, Model) -> Void, selectionHandler: @escaping (Model) -> Void) {
         self.dataProvider = dataProvider
@@ -48,8 +48,5 @@ final class CustomTableView<Cell: UITableViewCell, Model: NSManagedObject>: UITa
         selectionHandler(item)
         tableView.deselectRow(at: indexPath, animated: true)
     }
-  
-    
-    
     
 }

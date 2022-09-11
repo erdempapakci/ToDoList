@@ -52,9 +52,11 @@ required init?(coder: NSCoder) {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.reloadData()
         setUpView()
         tableView.Fetch()
     }
+  
     private func setUpView() {
         title = "To Do List"
         view.addSubview(tableView)
@@ -85,7 +87,5 @@ extension DetailViewController: AddNewItemViewControllerDelegate {
         CoreDataManager.shared.saveToDo(folder: folder, todoItem: item)
         tableView.Fetch()
     }
-    
-    
-    
+   
 }

@@ -44,6 +44,7 @@ final class DataSource<Cell: UITableViewCell, Model: NSManagedObject> : NSObject
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             dataProvider.deleteItem(indexPath: indexPath)
+            tableView.reloadData()
         }
     }
 }
